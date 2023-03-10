@@ -9,7 +9,8 @@ public class App {
 
         System.out.println();
         System.out.print("Masukan penghasilan bersih (Tahunan): ");
-        double penghasilanBersih = input.nextDouble();
+        double gaji = input.nextDouble();
+        double penghasilanBersih = gaji * 12;
 
         System.out.print("Sudah menikah (ya/tidak)?: ");
         boolean sudahMenikah = input.next().trim().equals("ya");
