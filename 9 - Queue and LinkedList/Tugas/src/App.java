@@ -4,6 +4,7 @@ public class App {
   public static void main(String[] args){
     Console console = System.console();
     TodoApp todoApp = new TodoApp();
+    ZakatApp zakatApp = new ZakatApp();
 
     System.out.println("Pilih program: ");
     System.out.println("1. Todo app");
@@ -18,7 +19,9 @@ public class App {
       System.out.flush();  
       todoApp.run();
     }else if (input.equals("2")){
-
+      System.out.print("\033[H\033[2J");  
+      System.out.flush();
+      zakatApp.run();
     }
 
   }
